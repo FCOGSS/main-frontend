@@ -10,8 +10,9 @@ RUN apk add bash vim git curl nodejs npm
 RUN git clone https://github.com/FCOGSS/main-frontend.git
 
 # install packages
-RUN cd main-frontend && npm i
+RUN npm i -g @angular/cli
+RUN cd main-frontend/main-frontend && npm i
 
 # specify HTTPS port and provide entrypoint
-EXPOSE 4200
+EXPOSE 443
 ENTRYPOINT ["/bin/bash"]
