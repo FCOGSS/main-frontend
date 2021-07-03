@@ -1,0 +1,14 @@
+* {
+    font-family: 'Open Sans', sans-serif;
+}
+
+img {
+    width: 50%;
+    height: auto;
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+    padding: 2rem;
+}

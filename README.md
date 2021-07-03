@@ -14,3 +14,15 @@
 1. `docker login` (use credentials)
 2. `docker tag fcogss:latest fcogss/main:latest`
 3. `docker push fcogss/main:latest`
+
+## EC2
+1. `sudo su`
+2. `yum update -y`
+3. `yum install docker -y`
+4. `Service docker start`
+5. `docker login` (use credentials)
+6. `docker pull fcogss/main:latest`
+7. `docker run -itd -p 443:443 --name fcogss fcogss/main:latest`
+8. `docker start fcogss`
+9. `docker exec -it fcogss bash`
+10. `cd main-frontend/main-frontend`
